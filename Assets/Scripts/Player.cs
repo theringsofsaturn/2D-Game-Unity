@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rb; // Player's rigidbody
-    [SerializeField] private float jumpForce = 5f; // Jump force
+    [SerializeField] private float jumpForce = 6.0f; // Jump force
     [SerializeField] private bool isGrounded = false; // Is player on the ground?
     [SerializeField] private LayerMask groundLayer; // Layer mask for ground
 
@@ -28,10 +28,11 @@ public class Player : MonoBehaviour
             // Jump
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false;
+            // wait
         }
 
         // 2D Raycast to check if the player is on the ground
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.0f);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, groundLayer.value);
 
         if (hit.collider != null)
         {
