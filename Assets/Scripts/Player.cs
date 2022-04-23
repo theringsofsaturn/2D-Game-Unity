@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpForce = 6.0f; // Jump force
     [SerializeField] private bool isGrounded = false; // Is player on the ground?
     [SerializeField] private LayerMask groundLayer; // Layer mask for ground
+    private bool resetJumpNeeded = false; // Is player's jump reset needed?
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,8 @@ public class Player : MonoBehaviour
             // Jump
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false;
-            // wait
+            resetJumpNeeded = true;
+            StartCoroutine(ResetJumpNeededRoutine());
         }
 
         // 2D Raycast to check if the player is on the ground
@@ -36,11 +38,18 @@ public class Player : MonoBehaviour
 
         if (hit.collider != null)
         {
-            isGrounded = true;
+            if (resetJumpNeeded == false)
+                isGrounded = true;
         }
 
         // Current velocity = new velocity (horizontal input, current velocity y)
         rb.velocity = new Vector2(move, rb.velocity.y);
+    }
+
+    IEnumerator ResetJumpNeededRoutine()
+    {
+        yield return new WaitForSeconds(0.1f); // Wait for 0.1 seconds
+        resetJumpNeeded = false;
     }
 
 }
