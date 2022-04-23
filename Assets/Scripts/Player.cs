@@ -20,6 +20,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Movement();
+
+        CheckIfGrounded();
+    }
+
+    void Movement()
+    {
         //  Horizontal input for left and right (x)
         float move = Input.GetAxisRaw("Horizontal");
 
@@ -32,7 +39,12 @@ public class Player : MonoBehaviour
             resetJumpNeeded = true;
             StartCoroutine(ResetJumpNeededRoutine());
         }
+        // Current velocity = new velocity (horizontal input, current velocity y)
+        rb.velocity = new Vector2(move, rb.velocity.y);
+    }
 
+    void CheckIfGrounded()
+    {
         // 2D Raycast to check if the player is on the ground
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, groundLayer.value);
 
@@ -41,9 +53,6 @@ public class Player : MonoBehaviour
             if (resetJumpNeeded == false)
                 isGrounded = true;
         }
-
-        // Current velocity = new velocity (horizontal input, current velocity y)
-        rb.velocity = new Vector2(move, rb.velocity.y);
     }
 
     IEnumerator ResetJumpNeededRoutine()
