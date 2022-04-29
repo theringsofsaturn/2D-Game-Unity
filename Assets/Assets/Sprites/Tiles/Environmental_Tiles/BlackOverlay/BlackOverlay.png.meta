@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -81,11 +82,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -520,6 +521,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      BlackOverlay_0: 21300000
+      BlackOverlay_10: 21300020
+      BlackOverlay_15: 21300030
+      BlackOverlay_7: 21300014
+      BlackOverlay_8: 21300016
+      BlackOverlay_5: 21300010
+      BlackOverlay_1: 21300002
+      BlackOverlay_12: 21300024
+      BlackOverlay_11: 21300022
+      BlackOverlay_14: 21300028
+      BlackOverlay_3: 21300006
+      BlackOverlay_9: 21300018
+      BlackOverlay_4: 21300008
+      BlackOverlay_2: 21300004
+      BlackOverlay_6: 21300012
+      BlackOverlay_13: 21300026
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

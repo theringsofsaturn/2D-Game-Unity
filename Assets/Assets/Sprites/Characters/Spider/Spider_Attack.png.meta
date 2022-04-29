@@ -117,6 +117,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -125,9 +126,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -868,6 +869,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Spider_Attack_21: 21300042
+      Spider_Attack_22: 21300044
+      Spider_Attack_4: 21300008
+      Spider_Attack_2: 21300004
+      Spider_Attack_10: 21300020
+      Spider_Attack_20: 21300040
+      Spider_Attack_0: 21300000
+      Spider_Attack_5: 21300010
+      Spider_Attack_29: 21300058
+      Spider_Attack_28: 21300056
+      Spider_Attack_24: 21300048
+      Spider_Attack_3: 21300006
+      Spider_Attack_18: 21300036
+      Spider_Attack_17: 21300034
+      Spider_Attack_30: 21300060
+      Spider_Attack_15: 21300030
+      Spider_Attack_7: 21300014
+      Spider_Attack_14: 21300028
+      Spider_Attack_16: 21300032
+      Spider_Attack_19: 21300038
+      Spider_Attack_8: 21300016
+      Spider_Attack_27: 21300054
+      Spider_Attack_11: 21300022
+      Spider_Attack_23: 21300046
+      Spider_Attack_12: 21300024
+      Spider_Attack_13: 21300026
+      Spider_Attack_9: 21300018
+      Spider_Attack_26: 21300052
+      Spider_Attack_1: 21300002
+      Spider_Attack_25: 21300050
+      Spider_Attack_6: 21300012
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
             isGrounded = false;
             resetJumpNeeded = true;
             StartCoroutine(ResetJumpNeededRoutine());
+            
         }
         // Current velocity = new velocity (horizontal input, current velocity y)
         rb.velocity = new Vector2(move, rb.velocity.y);

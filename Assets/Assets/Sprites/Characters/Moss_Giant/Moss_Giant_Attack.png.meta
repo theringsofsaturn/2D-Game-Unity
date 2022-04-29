@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -80,9 +81,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -508,6 +509,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Moss_Giant_Attack_2: 21300004
+      Moss_Giant_Attack_15: 21300030
+      Moss_Giant_Attack_7: 21300014
+      Moss_Giant_Attack_8: 21300016
+      Moss_Giant_Attack_9: 21300018
+      Moss_Giant_Attack_3: 21300006
+      Moss_Giant_Attack_14: 21300028
+      Moss_Giant_Attack_5: 21300010
+      Moss_Giant_Attack_4: 21300008
+      Moss_Giant_Attack_0: 21300000
+      Moss_Giant_Attack_11: 21300022
+      Moss_Giant_Attack_13: 21300026
+      Moss_Giant_Attack_12: 21300024
+      Moss_Giant_Attack_10: 21300020
+      Moss_Giant_Attack_1: 21300002
+      Moss_Giant_Attack_6: 21300012
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
